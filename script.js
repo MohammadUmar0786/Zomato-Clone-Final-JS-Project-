@@ -26,7 +26,6 @@ const restaurants = [
     "Resturant_close_time": 0
   },
 
-  // Only one rest which open at 12 AM night
   {
     "image": "fourth",
     "name": "Olive Garden",
@@ -1511,3 +1510,11 @@ document.getElementById('applyFilter').addEventListener('click',()=>{
 document.getElementById('closeFilter').addEventListener('click',()=>{
   document.getElementById('filterPopup').classList.add('hidden');  
 })
+
+// Toggle mobile auth buttons
+const menuToggle = document.getElementById("menuToggle");
+const mobileAuth = document.getElementById("mobileAuth");
+
+menuToggle.addEventListener("click", () => {
+  mobileAuth.classList.toggle("show");
+});

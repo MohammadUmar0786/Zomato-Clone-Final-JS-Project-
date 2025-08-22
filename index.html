@@ -3,12 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!--<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>-->
     <title>Zomato-Project</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="head">
+    <header>
+        <div class="head">
+            <!-- First row -->
+      <div class="first">
+        <div class="brand Box">
+          <h1>Zomato</h1>
+        </div>
+        <div class="search Box">
+          <form>
+            <input type="text" class="searching" placeholder="Search for restaurant, dish...">
+          </form>
+        </div>
+        <div class="auth Box">
+          <button class="log-btn">Log in</button>
+          <button class="sign-btn">Sign Up</button>
+        </div>
+        <!-- Mobile menu toggle -->
+        <div class="menu-toggle" id="menuToggle">☰</div>
+      </div>
+
+      <!-- Mobile dropdown -->
+      <div class="mobile-auth" id="mobileAuth">
+        <button class="log-btn">Log in</button>
+        <button class="sign-btn">Sign Up</button>
+      </div>
+
+    </header>
+
+    <div id="filter">
         <button id="Filters">Filters</button>
         <button id="Offers">Current Offer: +15% OFF</button>
         <button id="Rating">Rating:4+</button>
@@ -37,7 +65,12 @@
         </div>
         <button id="applyFilter">Apply</button>
         <button id="closeFilter">Close</button>
+
     </div>
+
+      <div class="offerimg">
+            <img src="e067a1cf0d3fe27b366402b98b994e9f1716296909.avif" alt="image">
+        </div>
 
     <!-- Insert all the cards here -->
     <div id="root">
